@@ -1,63 +1,125 @@
 import React, { Component } from "react";
 import "./App.css";
-import ResultComponent from "./components/ResultComponent";
-import KeyPadComponent from "./components/KeyPadComponent";
+
+import a1 from "./1.jpg";
+import a2 from "./2.jpg";
+import a3 from "./3.jpg";
+import a4 from "./4.jpg";
+import a5 from "./5.jpg";
+import a6 from "./6.jpg";
+import { Container, Col, Row, Form } from "react-bootstrap";
 
 class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      result: "",
-    };
-  }
-
-  onClick = (button) => {
-    if (button === "=") {
-      this.calculate();
-    } else if (button === "C") {
-      this.reset();
-    } else if (button === "CE") {
-      this.backspace();
-    } else {
-      this.setState({
-        result: this.state.result + button,
-      });
-    }
-  };
-
-  calculate = () => {
-    try {
-      this.setState({
-        result: (this.eval(this.state.result) || "") + "",
-      });
-    } catch (e) {
-      this.setState({
-        result: "error",
-      });
-    }
-  };
-
-  reset = () => {
-    this.setState({
-      result: "",
-    });
-  };
-
-  backspace = () => {
-    this.setState({
-      result: this.state.result.slice(0, -1),
-    });
-  };
-
   render() {
     return (
       <div>
-        <div className="calculator-body">
-          <h1>Ziya KK Calculator in React</h1>
-          <ResultComponent result={this.state.result} />
-          <KeyPadComponent onClick={this.onClick} />
+        <div className="menu">
+          <nav className="nav">
+            <a href="/" className="iqgen-title">
+              Ziya-KK
+            </a>
+
+            <ul>
+              <li className="">
+                <a href="/">Home</a>
+              </li>
+              <li className="">
+                <a href="/">Buy</a>
+              </li>
+              <li className="">
+                <a href="/">Cart</a>
+              </li>
+              <li className="">
+                <a href="/">Whats New?</a>
+              </li>
+              <li className="button">
+                <a href="/">Logout</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <div className="banner">
+          Welcome to the world of the clothing. Wear the label...
+        </div>
+        <Container>
+          <Row>
+            <Col>
+              <table>
+                <tr>
+                  <td>
+                    {" "}
+                    <img src={a1} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a2} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a3} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a4} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a5} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a6} width={200} height={200} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Buy now @10000 Rs</td>
+                  <td>Buy now @50000 Rs</td>
+                  <td>Buy now @1000 Rs</td>
+                  <td>Buy now @5000 Rs</td>
+                  <td>Buy now @700 Rs</td>
+                  <td>Buy now @6000 Rs</td>
+                </tr>
+                <br />
+                <tr>
+                  <td>
+                    {" "}
+                    <img src={a1} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a2} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a3} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a4} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a5} width={200} height={200} />
+                  </td>
+                  <td>
+                    {" "}
+                    <img src={a6} width={200} height={200} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Buy now @10000 Rs</td>
+                  <td>Buy now @50000 Rs</td>
+                  <td>Buy now @1000 Rs</td>
+                  <td>Buy now @5000 Rs</td>
+                  <td>Buy now @700 Rs</td>
+                  <td>Buy now @6000 Rs</td>
+                </tr>
+              </table>
+            </Col>
+          </Row>
+        </Container>
+
+        <div className="footer">@Ziyakk All rights reservered</div>
       </div>
     );
   }
