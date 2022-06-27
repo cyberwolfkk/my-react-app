@@ -7,7 +7,7 @@ import a3 from "./3.jpg";
 import a4 from "./4.jpg";
 import a5 from "./5.jpg";
 import a6 from "./6.jpg";
-import { Container, Col, Row, Form } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 
 class App extends Component {
   render() {
@@ -48,27 +48,27 @@ class App extends Component {
                 <tr>
                   <td>
                     {" "}
-                    <img src={a1} width={200} height={200} />
+                    <img alt="1" src={a1} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a2} width={200} height={200} />
+                    <img alt="1" src={a2} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a3} width={200} height={200} />
+                    <img alt="1" src={a3} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a4} width={200} height={200} />
+                    <img alt="1" src={a4} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a5} width={200} height={200} />
+                    <img alt="1" src={a5} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a6} width={200} height={200} />
+                    <img alt="1" src={a6} width={200} height={200} />
                   </td>
                 </tr>
                 <tr>
@@ -83,27 +83,27 @@ class App extends Component {
                 <tr>
                   <td>
                     {" "}
-                    <img src={a1} width={200} height={200} />
+                    <img alt="1" src={a1} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a2} width={200} height={200} />
+                    <img alt="1" src={a2} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a3} width={200} height={200} />
+                    <img alt="1" src={a3} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a4} width={200} height={200} />
+                    <img alt="1" src={a4} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a5} width={200} height={200} />
+                    <img alt="1" src={a5} width={200} height={200} />
                   </td>
                   <td>
                     {" "}
-                    <img src={a6} width={200} height={200} />
+                    <img alt="1" src={a6} width={200} height={200} />
                   </td>
                 </tr>
                 <tr>
